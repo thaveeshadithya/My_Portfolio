@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Elements to animate
-    const animateElements = document.querySelectorAll('.section-title, .skill-category, .project-card, .about-text, .about-image, .cert-card');
+    const animateElements = document.querySelectorAll('.section-title, .skill-category, .project-card, .about-text, .about-image, .language-card');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -48,6 +48,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Animate skill progress bars
                 if (entry.target.classList.contains('skill-category')) {
                     animateProgressBars(entry.target);
+                }
+                
+                // Animate language level bars
+                if (entry.target.classList.contains('language-card')) {
+                    animateLanguageBars(entry.target);
                 }
                 
                 observer.unobserve(entry.target);
@@ -103,6 +108,18 @@ function animateProgressBars(container) {
         percentElement.textContent = `${percent}%`;
         parent.nextElementSibling.appendChild(percentElement);
     });
+}
+
+// Animate language level bars
+function animateLanguageBars(card) {
+    const levelBar = card.querySelector('.level-bar');
+    const level = levelBar.getAttribute('data-level');
+    levelBar.style.setProperty('--level-width', `${level}%`);
+    
+    // Animate the bar
+    setTimeout(() => {
+        levelBar.querySelector('::after').style.width = `${level}%`;
+    }, 300);
 }
 
 // Initialize animations for hero section
