@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thaveesh Adithya | Electrical Engineering Portfolio</title>
+    <title>Thaveesh Adithya | Electrical and Electronic Engineering Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -29,14 +29,40 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="circuit-bg"></div>
+        <div class="circuit-bg">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <path class="circuit-path" d="M0,100 C150,200 350,0 500,100 C650,200 850,0 1000,100 L1000,500 L0,500 Z" />
+            </svg>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h1>Thaveesh Adithya</h1>
-                <h2>Electrical & Electronic <span>Engineer</span></h2>
-                <p>Innovating at the intersection of hardware design and electronic systems at University of Peradeniya</p>
-                <a href="#projects" class="cta-button">View My Projects</a>
+                <div class="hero-text">
+                    <h1>Thaveesh Adithya</h1>
+                    <div class="typewriter">
+                        <h2>Electrical & Electronic <span>Engineer</span></h2>
+                    </div>
+                    <p>Innovating at the intersection of hardware design and electronic systems at University of Peradeniya</p>
+                    <a href="#projects" class="cta-button">
+                        View My Projects
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-frame">
+                        <div class="circuit-border"></div>
+                        <img src="src/profile.jpg" alt="Thaveesh Adithya">
+                        <div class="tech-icons">
+                            <i class="fas fa-microchip"></i>
+                            <i class="fas fa-bolt"></i>
+                            <i class="fas fa-cogs"></i>
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-icon"></div>
         </div>
     </section>
 
@@ -52,7 +78,6 @@
                     <p>Core competencies:</p>
                     <ul>
                         <li>Circuit Design & Analysis</li>
-                        <li>PCB Design & Fabrication</li>
                         <li>Embedded Systems Development</li>
                         <li>Sensor Integration & Signal Processing</li>
                         <li>Control Systems & Automation</li>
@@ -61,16 +86,17 @@
                     </ul>
                 </div>
                 <div class="about-image">
-                    <div class="profile-frame">
-                        <img src="src/profile.jpg" alt="Thaveesh Adithya">
-                        <div class="profile-overlay">
-                            <div class="profile-details">
-                                <h3>Thaveesh Adithya</h3>
-                                <p>Electrical Engineering Student</p>
-                                <div class="university-badge">
-                                    <i class="fas fa-university"></i> University of Peradeniya
-                                </div>
-                            </div>
+                    <div class="education-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="edu-item">
+                            <h4>BSc in Electrical & Electronic Engineering</h4>
+                            <p>University of Peradeniya</p>
+                            <p>2020 - Present</p>
+                        </div>
+                        <div class="edu-item">
+                            <h4>Diploma in Advanced Electronics</h4>
+                            <p>Colombo Technical College</p>
+                            <p>2018 - 2020</p>
                         </div>
                     </div>
                 </div>
@@ -91,12 +117,6 @@
                                 <div class="progress-bar"></div>
                             </div>
                             <span>Circuit Design & Analysis</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-progress" data-percent="90">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <span>PCB Design & Fabrication</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-progress" data-percent="85">
@@ -152,17 +172,31 @@
                             <span>AutoCAD Electrical</span>
                         </div>
                         <div class="skill-item">
-                            <div class="skill-progress" data-percent="65">
-                                <div class="progress-bar"></div>
-                            </div>
-                            <span>PLC Programming</span>
-                        </div>
-                        <div class="skill-item">
                             <div class="skill-progress" data-percent="60">
                                 <div class="progress-bar"></div>
                             </div>
                             <span>C/C++ for Embedded</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="certificates">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="certs-grid">
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Embedded Systems Design</h4>
+                        <p>Coursera</p>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Advanced Circuit Analysis</h4>
+                        <p>edX</p>
+                    </div>
+                    <div class="cert-card">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Industrial Automation</h4>
+                        <p>Udemy</p>
                     </div>
                 </div>
             </div>
@@ -273,7 +307,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+94 77 123 4567</span>
+                            <span>+94 77 417 0247</span>
                         </div>
                     </div>
                     <div class="social-links">

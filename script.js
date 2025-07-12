@@ -1,8 +1,28 @@
 // Form submission
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
+    
+    // Create a success message element
+    const successMessage = document.createElement('div');
+    successMessage.textContent = 'Thank you for your message! I will get back to you soon.';
+    successMessage.style.backgroundColor = '#64ffda';
+    successMessage.style.color = '#0a192f';
+    successMessage.style.padding = '15px';
+    successMessage.style.borderRadius = '4px';
+    successMessage.style.marginTop = '20px';
+    successMessage.style.textAlign = 'center';
+    successMessage.style.fontWeight = '600';
+    
+    // Insert after the form
+    this.parentNode.insertBefore(successMessage, this.nextSibling);
+    
+    // Reset form
     this.reset();
+    
+    // Remove message after 5 seconds
+    setTimeout(() => {
+        successMessage.remove();
+    }, 5000);
 });
 
 // Animation on scroll
@@ -18,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Elements to animate
-    const animateElements = document.querySelectorAll('.skill-category, .project-card');
+    const animateElements = document.querySelectorAll('.section-title, .skill-category, .project-card, .about-text, .about-image, .cert-card');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -66,14 +86,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Initialize animations for hero section
-    setTimeout(() => {
-        document.querySelector('.hero h1').style.animation = 'typing 3s steps(30) 1s forwards';
-        document.querySelector('.hero h2').style.animation = 'fadeIn 1s ease 1.5s forwards';
-        document.querySelector('.hero p').style.animation = 'fadeIn 1s ease 2s forwards';
-        document.querySelector('.cta-button').style.animation = 'fadeIn 1s ease 2.5s forwards';
-    }, 500);
 });
 
 // Animate skill progress bars
@@ -92,3 +104,10 @@ function animateProgressBars(container) {
         parent.nextElementSibling.appendChild(percentElement);
     });
 }
+
+// Initialize animations for hero section
+setTimeout(() => {
+    document.querySelector('.hero h1').style.animation = 'fadeInUp 1s ease forwards';
+    document.querySelector('.hero p').style.animation = 'fadeIn 1s ease 1s forwards';
+    document.querySelector('.cta-button').style.animation = 'fadeIn 1s ease 1.5s forwards';
+}, 500);
