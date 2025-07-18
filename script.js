@@ -102,11 +102,7 @@ function animateProgressBars(container) {
         const percent = parent.getAttribute('data-percent');
         bar.style.width = `${percent}%`;
         
-        // Add percentage number
-        const percentElement = document.createElement('span');
-        percentElement.className = 'skill-percent';
-        percentElement.textContent = `${percent}%`;
-        parent.nextElementSibling.appendChild(percentElement);
+     
     });
 }
 
