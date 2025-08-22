@@ -25,30 +25,24 @@ Electrical & Electronic Engineering undergraduate at University of Peradeniya
 Specializing in hardware solutions and electronic systems design  
 
 **Core Competencies:**
-- ✅ Circuit Design & Analysis
-- ✅ PCB Design & Fabrication
-- ✅ Embedded Systems Development
-- ✅ Sensor Integration & Signal Processing
-- ✅ Control Systems & Automation
-- ✅ Power Electronics
-- ✅ Hardware Prototyping
+- Circuit Design & Analysis
+- Embedded Systems Development
+- Sensor Integration & Signal Processing
+- Control Systems & Automation
+- Power Electronics
+- Hardware Prototyping
 
 ## Technical Skills
 ### Core Engineering
-- Circuit Design & Analysis (95%)
-- PCB Design & Fabrication (90%)
-- Embedded Systems (85%)
-- Control Systems (88%)
-- Analog & Digital Electronics (82%)
-- Power Systems (92%)
+- Circuit Design & Analysis 
+- Embedded Systems
+- Analog & Digital Electronics 
 
 ### Tools & Technologies
-- MATLAB & Simulink (85%)
-- LTspice (80%)
-- Arduino/Raspberry Pi (75%)
-- AutoCAD Electrical (70%)
-- PLC Programming (65%)
-- C/C++ for Embedded (60%)
+- MATLAB & Simulink 
+- Arduino
+- NI Multisum
+
 
 ## Projects
 ### Microcontroller-Free Line Following Robot
