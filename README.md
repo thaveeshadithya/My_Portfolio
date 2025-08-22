@@ -1,7 +1,7 @@
 # Thaveesh Adithya - Electrical Engineering Portfolio
 
 [![Portfolio Screenshot](./src/screenshot.png)](https://thaveeshadithya.github.io/My_Portfolio/)
- https://thaveeshadithya.github.io/My_Portfolio/
+ 
 
 > Professional portfolio showcasing hardware design projects, electronic systems expertise, and engineering capabilities
 
